@@ -1,0 +1,89 @@
+json-funtions.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+/*
+      <script>
+
+        let obj={
+
+        oracle :function()  { document.write("Oracle connection soon"); },
+
+
+        mysql :function()
+        {
+            document.write("mysql connection soon");
+                }
+            };
+
+            obj.oracle();
+            obj.mysql();   
+    </script>  
+    */
+
+/*
+    <!--   <script> 
+    let obj={
+            boot:(param1)=>{
+
+                return `welcome to ${param1}`;
+            }
+         };
+
+    let res=obj.boot(`spring boot 4.x`);
+        document.write(res);
+    </script> -->
+
+
+
+    */
+  <script>
+
+
+
+        let employees = [{e_id: 111,e_name: "emp_one", e_image: "https://reqres.in/img/faces/1-image.jpg"},
+                         {e_id: 222,e_name: "emp_two", e_image: "https://reqres.in/img/faces/2-image.jpg"},
+                          {e_id:333,e_name: "emp_three", e_image: "https://reqres.in/img/faces/3-image.jpg"},
+                           {e_id: 444,e_name: "emp_four", e_image: "https://reqres.in/img/faces/4-image.jpg"}, 
+                           {e_id:555,e_name: "emp_five",e_image: "https://reqres.in/img/faces/5-image.jpg"}];
+    document.write(`<table border="1"
+                        align="center" 
+                        cellspacing="10px"
+                         cellpadding="10px">
+                        <tr>
+                            <th>e_id</th>
+                            <th>e_name</th>
+                            <th>e_image</th>
+                    </tr>`);
+
+                for (let employee of employees) 
+                {
+                    document.write(`<tr>
+                        <td>${employee.e_id}</td> 
+                        <td>${employee.e_name}</td>
+                        <td><img src=${employee.e_image} src="50px" alt="Error"></td>
+                    </tr>`);
+                };
+                
+                document.write('</table');
+
+
+
+    </script> 
+
+
+
+
+
+</body>
+
+</html>
